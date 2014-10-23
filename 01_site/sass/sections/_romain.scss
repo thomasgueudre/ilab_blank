@@ -1,0 +1,291 @@
+.workspace-menu-txt h3, .workspace-menu-txt-two h3,
+.workspace-menu-txt p, .workspace-menu-txt-two p {
+	color: #fff;
+}
+
+
+img.pic-stylet {
+	display: none;
+}
+
+
+h3.my-day-txt,
+p.my-day-txt {
+	color: $blue-medium;
+}
+
+
+
+.video-pres iframe {
+	width: 100%;
+}
+
+
+
+.video-pres {
+	height: auto;
+}
+
+
+
+
+
+
+
+
+/*
+------------------------------
+
+  
+  $media-queries 
+
+------------------------------
+*/
+
+
+
+
+
+
+
+
+@media (max-width: 950px) {
+
+	.workspace-menu {
+		width: 100%;
+	}
+
+.workspace-menu .day-menu {
+	width: 90%;
+}
+
+.workspace-menu .nite-menu {
+	width: 90%;
+}
+
+
+
+
+.try-out {
+	height: 700px;
+}
+
+
+.try-out-txt {
+		width: 80%;
+		margin: 0 auto;
+		background: #fff;
+		padding: 20px;
+		right: auto;
+		left: auto;
+
+}
+
+
+.try-out-txt p {
+		margin-left: 0;
+}
+
+
+.try-out-txt h3 {
+		font-size: 20px;
+		margin-bottom: 30px;
+	}
+
+
+
+
+
+a.link-try {
+	margin-top: 300px;
+	margin-bottom: 200px;
+}
+
+.footer-name {
+	height: auto;
+}
+
+
+}
+/* end max-width 950px */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 850px) {
+
+
+	section.stylet {
+		padding-top: 100px; 
+	}
+
+
+
+	.stylet-txt {
+
+		margin-top: 0;
+	}
+
+
+}
+/* end max-width 850px */
+
+
+
+
+
+
+
+
+
+@media (max-width: 650px) {
+
+	.stylet-txt {
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	.stylet-txt p {
+		margin-left: 0;
+	}
+
+
+
+	.stylet-txt h3 {
+		font-size: 20px;
+		margin-bottom: 30px;
+	}
+
+
+	img.pic-stylet {
+		display: block;
+		margin: 0 auto;
+		width: 100%;
+		margin-top: 50px;
+	}
+	
+	.stylet-wireframe {
+		display: none;
+	}
+
+
+
+
+
+
+
+
+
+.workspace-menu-txt, 
+.workspace-menu-txt-two {
+		width: 80%;
+		margin: 0 auto;
+	}
+
+.workspace-menu-txt p, 
+.workspace-menu-txt-two p {
+		margin-left: 0;
+	}
+
+
+
+.workspace-menu-txt h3, 
+.workspace-menu-txt-two h3 {
+		font-size: 20px;
+		margin-bottom: 30px;
+	}
+
+
+
+.sharing {
+	height: 400px;
+}
+
+
+
+.sharing-txt {
+		width: 80%;
+		margin: 0 auto;
+		background: #fff;
+		padding: 20px;
+		right: auto;
+
+}
+
+
+.sharing-txt p {
+		margin-left: 0;
+}
+
+
+.sharing-txt h3 {
+		font-size: 20px;
+		margin-bottom: 30px;
+	}
+
+
+
+
+
+
+
+
+
+}
+/* end max-width 650px */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+	Grille
+*/
+
+
+
+
+#hugridUX {
+
+	display: none;
+
+
+}
+
+
+
+

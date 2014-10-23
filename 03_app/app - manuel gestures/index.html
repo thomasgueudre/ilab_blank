@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title></title>
+  <meta charset="UTF-8">
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+
+  <!--AFFICHAGE MOBILE-->
+
+<!--
+  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="initial-scale=1.0">
+-->
+  <meta name="description" content="">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1" />
+  <meta http-equiv="cleartype" content="on">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="">
+
+  <!--  stylesheet-->
+
+  <link rel="stylesheet" href="bower_components/normalize.css/normalize.css">
+  <link rel="stylesheet" href="style.css">
+
+  <!--  javascript-->
+
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!--Animation logo-->
+    <div id="video">
+      <!--      <video id="logo-anim" src="img/anim_logo_long.mov" autoplay preload="true"></video>-->
+      <img id="logo-anim-gif" src="img/anim-log-640x360.gif" alt="animation logo _Blank">
+    </div>
+
+
+    <header>
+      <h1>_menu</h1>
+      <a href="index.html">
+        <img src="img/logo-min.png" alt="_blank logo">
+      </a>
+    </header>
+
+    <main>
+
+      <div id="wrapper">
+        <ul id="menu">
+          <li>
+            <a href="#">
+              <p>_Import</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <p>_Pins</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <p>_Project</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <p>_Lists</p>
+            </a>
+          </li>
+          <li>
+            <a href="app.html">
+              <p id="tuto">_Tutorial</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <p>_Save</p>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+    </main>
+
+    <footer>
+    </footer>
+
+
+    <script>
+      //      $(document).ready(function () {
+       //        setTimeout(function () {
+       //          $('#video').addClass(".off");
+       //        }, 500);
+       //        console.log('hello');
+       //      });
+       //
+
+      $(document).ready(function () {
+        setTimeout(function () {
+          $('#video').css('display', 'none');
+        }, 3500)
+      });
+    </script>
+
+
+  </div>
+
+</body>
+
+</html>

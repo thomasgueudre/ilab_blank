@@ -1,0 +1,66 @@
+body {
+
+	background: $white;
+	font-family: $family-01;
+	font-size: $size-text;
+	color: $blue-medium;
+
+
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+
+}
+
+#container {
+	background: rgba(255,0,0,0.0);
+	width: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+a {
+}
+
+p {
+	line-height: 150%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
+------------------------------
+
+  
+  $media-queries 
+
+------------------------------
+*/
+
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+
+	p {
+		font-size: 16px;
+	}
+
+}
+/* end max-width 600px */
+
+
+
+

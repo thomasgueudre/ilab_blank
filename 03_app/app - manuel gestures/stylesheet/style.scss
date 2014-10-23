@@ -1,0 +1,67 @@
+@import "_mixin.scss";
+@import "_menu.scss";
+@import "_guide.scss";
+@import "_activation.scss";
+
+html, body {
+  margin: 0;
+  padding: 0;
+  -webkit-transition: .3s ease-out;
+  -o-transition: .3s ease-out;
+}
+
+.container {
+  width: 100%;
+}
+
+header {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px 0 10px 0;
+  border-bottom: 1px solid #eee;
+  h1 {
+    text-align: center;
+    margin: 0 auto;
+    width: 200px;
+    font-family: $font;
+    font-weight: $light;
+    font-size: $title;
+    display: none;
+  }
+  img {
+    height: 30px;
+    display: block;
+    margin: 0 auto;
+  }
+  #menu-button {
+    z-index: 990;
+    position: absolute;
+    left: 20px;
+    top: 15px;
+    font-family: $font;
+    font-weight: $light;
+    font-size: $text;
+    letter-spacing: $ls-text;
+    text-transform: uppercase;
+    background: none;
+    border: none;
+  }
+  #close-iframe-button {
+    position: fixed;
+    left: 10px;
+    top: 5px;
+    font-family: $font;
+    font-weight: $light;
+    font-size: $text;
+    text-transform: uppercase;
+    background: none;
+    border: 1px solid #eee;
+    background: #fff;
+    padding: 10px;
+    z-index: 999;
+  }
+  #close-iframe-button.off {
+    display: none;
+  }
+}

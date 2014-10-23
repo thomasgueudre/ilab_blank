@@ -1,0 +1,221 @@
+
+section.tools {
+	padding-bottom: 250px;
+}
+
+
+
+.tools-txt {
+	width: 600px;
+	margin-left: 60px;
+	margin-bottom: 120px;
+}
+
+.tools-txt h3 {
+	@include blank-h3;
+
+}
+
+.tools-txt p {
+	margin-left: 60px;
+}
+
+
+.tools ul {
+	width: 95%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.tools ul li {
+	width: 28%;
+	margin-right: 5%;
+	text-align: center;
+	float: left;
+	list-style: none;
+	overflow: hidden;
+}
+
+.tools ul li:last-child {
+	margin-right: 0;
+}
+
+.tools ul li h4 {
+	letter-spacing: 2px;
+	margin-bottom: 20px;
+	
+}
+
+.tools ul li img {
+	display: block;
+	margin: 0 auto;
+	width: 90px;
+	
+}
+
+
+.tools ul li p {
+	font-size: 17px;
+	margin-top: 20px;
+
+}
+
+
+
+.tools p.tools-more {
+	width: 100%;
+	height: 400px;
+	line-height: 400px;
+	text-align: center;
+	background: url(../img/tools/patern_icons.svg);
+	margin-top: 100px;
+	background-repeat: no-repeat;
+	background-position: center center;
+
+	font-size: 40px;
+	font-weight: 300;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+------------------------------
+
+  
+  $media-queries 
+
+------------------------------
+*/
+
+
+
+@media (max-width: 950px) {
+
+	section.tools {
+		padding-bottom: 100px;
+	}
+
+
+
+	.tools ul {
+		margin-top: 50px;
+	}
+	
+
+
+}
+/* end max-width 950px */
+
+
+
+
+
+
+@media (max-width: 900px) {
+
+	.tools ul li,
+	.tools ul li:last-child {
+		float: none;
+		width: 50%;
+		margin: 0 auto;
+		margin-bottom: 80px;
+	}
+
+
+	.tools p.tools-more {
+		margin-top: 0;
+		background-size: auto 90%;
+		font-size: 30px;
+	}
+
+
+
+}
+/* end max-width 900px */
+
+
+
+
+
+
+@media (max-width: 650px) {
+
+	.tools-txt {
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	.tools-txt p {
+		margin-left: 0;
+	}
+
+
+
+	.tools-txt h3 {
+		font-size: 20px;
+		margin-bottom: 30px;
+	}
+
+
+	.tools ul {
+		margin-top: 150px;
+	}
+
+
+
+	.tools ul li,
+	.tools ul li:last-child {
+		width: 80%;
+		margin-bottom: 130px;
+
+	}
+
+
+
+
+}
+/* end max-width 650px */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

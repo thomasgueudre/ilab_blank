@@ -1,0 +1,172 @@
+@import "_mixin.scss";
+
+div#video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #FFF;
+  
+  -webkit-animation: fadeout 1s ease-out 3s forwards;
+  -o-animation: fadeout 1s ease-out 3s forwards;
+  animation: fadeout 1s ease-out 3s forwards;
+
+  img#logo-anim-gif {
+    width: 100%;
+    -webkit-animation: fadeout 1s ease-out 3s forwards;
+    -o-animation: fadeout 1s ease-out 3s forwards;
+    animation: fadeout 1s ease-out 3s forwards;
+    position: absolute;
+    top: 50%;
+    margin-top: -30%;
+    left: 50%;
+    margin-left: -50%;
+    // ON MOBILE gif
+    @media screen and (min-width: 640px) {
+      display: none;
+    }
+  }
+}
+
+div#video.off {
+  display: none;
+}
+
+  ul#menu {
+    @media screen and (max-width: 640px) {
+      width: calc(100% - 40px);
+      @include clearfix;
+      margin: 0 auto;
+      padding: 0;
+      li {
+        list-style: none;
+        width: calc(50% - 1px);
+        float: left;
+        border-bottom: 1px solid #ddd;
+        // 2n mr:0
+        &:nth-child(2n) {
+          margin-right: 0px;
+          border-left: 1px solid #ddd;
+        }
+        // no border last row
+        &:nth-child(5), &:nth-child(6) {
+          border-bottom: none;
+        }
+        a {
+          width: 100%;
+          display: block;
+          text-decoration: none;
+          cursor: pointer;
+          z-index: 999;
+          &:before {
+            content: "";
+            display: block;
+            width: 40px;
+            height: 40px;
+            float: left;
+            margin-left: 45px;
+            margin-right: 50px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+          }
+          p {
+            text-align: center;
+            font-family: $font;
+            font-weight: 100;
+            font-size: $text;
+            letter-spacing: $ls-text;
+            text-transform: uppercase;
+            color: #ccc;
+            &#tuto {
+              color: #454545;
+              font-weight: 300;
+            }
+          }
+        }
+      }
+    }
+  }
+
+// menu-icons
+
+ul#menu > li:first-child > a:before {
+  background: url(img/import-icon/import.png) no-repeat;
+  background-size: contain;
+}‡
+
+ul#menu > li:nth-child(2) > a:before {
+  background: url(img/pins-icon/pins.png) no-repeat;
+  background-size: contain;
+}
+
+ul#menu > li:nth-child(3) > a:before {
+  background: url(img/project-icon/project.png) no-repeat;
+  background-size: contain;
+}
+
+ul#menu > li:nth-child(4) > a:before {
+  background: url(img/checks-icon/checks.png) no-repeat;
+  background-size: contain;
+}
+
+ul#menu > li:nth-child(5) > a:before {
+  
+  background: url(img/tutorial-icon/tutorial.png) no-repeat;
+  background-size: contain;
+}
+
+ul#menu > li:last-child > a:before {
+  background: url(img/save-icon/save.png) no-repeat;
+  background-size: contain;
+}
+
+// animation Fadeout
+@-webkit-keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+
+@-moz-keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+
+@-ms-keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+
+@-o-keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}

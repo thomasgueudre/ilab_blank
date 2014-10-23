@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Menu interface</title>
+		<meta name="viewport" content="initial-scale=1.0,width=device-width">
+		<meta charset="UTF-8" />
+		<link href='http://fonts.googleapis.com/css?family=Fira+Sans' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<link rel="stylesheet" type="text/css" href="jquery-ui.css">
+	</head>
+
+	<body>
+
+		<div class="container">
+
+			<div class="board">
+
+				<div class="background-canvas"></div>
+				<canvas id="canvas"></canvas>
+
+				<div class="button-show-tool pointer">
+					<svg width="25px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve"> <line fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#8A92A6" stroke-width="1.1303" stroke-miterlimit="10" x1="2.833" y1="6.999" x2="22.167" y2="6.999"/> <line fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#8A92A6" stroke-width="1.1303" stroke-miterlimit="10" x1="2.833" y1="12.499" x2="22.167" y2="12.499"/> <line fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#8A92A6" stroke-width="1.1303" stroke-miterlimit="10" x1="2.833" y1="18.001" x2="22.167" y2="18.001"/> <g> </svg>
+					<span>Menu</span></li>
+				</div>
+
+				<div class="main-menu pointer">
+
+					<ul class="tool-nav pointer">
+						<li class="marker">
+							<a href="#canvas" data-size="2" data-color="#000">
+								<svg width="25px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve"> <path id="calque_x5F_1-2_34_" d="M24.187,4.297L20.719,0.83l-0.907,0.906l-0.936-0.938l-4.163,4.16l0.707,0.707 l3.454-3.453l0.23,0.23l-4.967,4.968l0.237,0.237L4.059,17.963l0,0l-0.086,0.086L3.352,18.67l0,0l-2.537,2.539l2.994,2.994 l3.245-3.246l10.315-10.315l0.236,0.236L24.187,4.297z M22.772,4.297l-5.166,5.167L15.553,7.41l5.166-5.166L22.772,4.297z M2.229,21.209l1.83-1.832l0.791,0.789l0.791,0.791l-1.831,1.832L2.229,21.209z M6.347,20.25l-0.791-0.791L4.766,18.67L15.082,8.355 l1.58,1.58L6.347,20.25z"/> </svg>
+								<span>Marker</span>
+							</a>
+						</li>
+						<li>
+							<svg width="25px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve"> <path id="calque_x5F_1-2_1_" d="M16.432,7.62l-3.479-6.343c-0.119-0.216-0.388-0.328-0.632-0.263 c-0.161,0.044-0.301,0.166-0.351,0.293L8.567,7.593C8.498,7.723,8.482,7.87,8.522,8.01l1.36,4.756 c0.068,0.237,0.288,0.402,0.535,0.402h0.002l4.108-0.026c0.245-0.002,0.458-0.16,0.529-0.396l1.419-4.697 C16.52,7.906,16.504,7.75,16.432,7.62z M14.399,12.419l-3.856,0.025L9.236,7.877l3.231-5.982l3.297,6.012L14.399,12.419z M14.675,14.031c-0.057-0.135-0.188-0.222-0.334-0.222h-3.765c-0.141,0-0.27,0.083-0.329,0.209c-0.036,0.08-0.898,1.94-0.898,2.955 c0,0.935,0,6.668,0,6.668c0,0.2,0.163,0.362,0.362,0.362h5.436c0.199,0,0.361-0.162,0.361-0.362c0,0,0-5.774,0-6.666 C15.509,16.017,14.708,14.111,14.675,14.031z M14.786,16.975c0,0.59,0,3.309,0,5.088v1.218h-4.712c0-1.274-0.001-5.514,0-6.307 c0-0.55,0.373-1.603,0.737-2.44h3.287C14.438,15.39,14.786,16.45,14.786,16.975z M11.267,5.369c0,0.642,0.521,1.164,1.163,1.164 c0.641,0,1.162-0.521,1.162-1.163S13.07,4.207,12.43,4.207C11.788,4.207,11.267,4.729,11.267,5.369z M12.869,5.369 c0,0.242-0.197,0.44-0.439,0.44c-0.242,0-0.439-0.198-0.439-0.44c0-0.241,0.197-0.438,0.439-0.438 C12.671,4.932,12.869,5.128,12.869,5.369z"/> </svg>
+							<span>Pen</span>
+						</li>
+						<li>
+							<a href="#canvas" data-color="#ffffff" data-size="20">
+								<svg width="25px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve"> <g id="calque_x5F_1-2_46_"> <path d="M8.577,24.314l-7.891-7.889l15.738-15.74l7.891,7.889L8.577,24.314z M2.1,16.426L8.577,22.9L22.9,8.575 L16.424,2.1L2.1,16.426z"/> <polygon points="1.747,16.779 1.04,16.072 8.909,8.201 16.445,15.738 15.738,16.445 8.909,9.615 	"/> </svg>
+								<span>Eraser</span>
+							</a>
+						</li>
+						<li>
+							<a class="square-button" href="#">
+								<svg width="25px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve"> <g id="calque_x5F_1-2_17_"> <path d="M23.85,23.85H1.151V1.149H23.85V23.85z M2.298,22.701h20.404V2.297H2.298V22.701z"/> </g> </svg>
+								<span>Square</span>
+							</a>
+							<svg class="button-plus-shape" width="22px" height="22px" viewBox="0 0 22 22" enable-background="new 0 0 22 22" xml:space="preserve"> <circle id="calque_x5F_1-2_18_" fill="#FFFFFF" stroke="#7D7F81" stroke-width="1.3982" stroke-miterlimit="10" cx="11.252" cy="10.648" r="9.086"/> <path id="calque_x5F_1-1_55_" fill="#8A92A6" d="M15.637,10.089v1.118h-3.355v3.4h-1.23v-3.4H7.696v-1.118h3.355V6.689h1.23v3.399 H15.637z"/> </svg>
+					<ul class="shape-open pointer">
+								<li class="circle-button pointer"><svg class="stroke-svg-menu" width="25px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve">
+<circle id="calque_x5F_1-2_35_" fill="none" stroke-miterlimit="10" cx="12.5" cy="12.5" r="11.209"/>
+</svg><span>Circle</span></li>
+								<li class="last-button-border triangle-button pointer"><svg width="25px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve">
+<g id="calque_x5F_1-2_2_">
+	<g>
+		<path d="M12.5,3.823l9.396,18.794H3.104L12.5,3.823 M12.5,1.22L1.221,23.781h22.559L12.5,1.22L12.5,1.22z"/>
+	</g>
+</g>
+</svg><span>Triangle</span></li>
+							</ul>
+						</li>
+						<li><a class="mobile-button" href="#"><svg width="25px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve">
+<g id="calque_x5F_1-2_29_">
+	<g>
+		<path d="M20,24H5V1h15V24z M6,23h13V2H6V23z"/>
+		<rect x="5" y="3" width="14" height="1"/>
+		<rect x="5" y="19" width="14" height="1"/>
+	</g>
+</g>
+</svg><span>Mobile</span></a><svg class="button-plus-mockup" width="22px" height="22px" viewBox="0 0 22 22" enable-background="new 0 0 22 22" xml:space="preserve">
+<circle id="calque_x5F_1-2_18_" fill="#FFFFFF" stroke="#7D7F81" stroke-width="1.3982" stroke-miterlimit="10" cx="11.252" cy="10.648" r="9.086"/>
+<path id="calque_x5F_1-1_55_" fill="#8A92A6" d="M15.637,10.089v1.118h-3.355v3.4h-1.23v-3.4H7.696v-1.118h3.355V6.689h1.23v3.399
+	H15.637z"/>
+</svg>
+							<ul class="mockup-open pointer">
+								<li class="tablet-button pointer"><svg width="25px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve">
+<g id="calque_x5F_1-2">
+	<g>
+		
+			<rect x="4.5" y="1.5" fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke-miterlimit="10" width="17" height="21"/>
+		
+			<rect x="12.234" y="19.616" fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke-width="0.7119" stroke-miterlimit="10" width="1.26" height="1.26"/>
+	</g>
+	<g>
+		
+			<rect x="6.5" y="3.5" fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke-miterlimit="10" width="13" height="15"/>
+	</g>
+</g>
+</svg><span>Tablet</span></li>
+								<li class="last-button-border desktop-button pointer"><svg width="25px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve">
+<g>
+	
+		<rect x="1.5" y="3.5" fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke-miterlimit="10" width="22" height="17"/>
+</g>
+<g>
+	
+		<rect x="3.5" y="5.5" fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke-miterlimit="10" width="18" height="13"/>
+</g>
+<line fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke-miterlimit="10" x1="7" y1="22.5" x2="18" y2="22.5"/>
+</svg><span>Desktop</span></li>
+							</ul>
+						</li>
+						</li>
+						<li><a class="menu-x-button" href="#"><svg width="25px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve">
+<g id="calque_x5F_1-2_21_">
+	<path d="M24.318,6.3H0.682V1.184h23.637V6.3z M1.682,5.3h21.637V2.184H1.682V5.3z"/>
+	<path d="M24.318,15.042H0.682V9.925h23.637V15.042z M1.682,14.042h21.637v-3.117H1.682V14.042z"/>
+	<path d="M24.318,23.815H0.682v-5.114h23.637V23.815z M1.682,22.815h21.637v-3.114H1.682V22.815z"/>
+</g>
+</svg><span>Menu X</span></a><svg class="button-plus-menu" width="22px" height="22px" viewBox="0 0 22 22" enable-background="new 0 0 22 22" xml:space="preserve">
+<circle id="calque_x5F_1-2_18_" fill="#FFFFFF" stroke="#7D7F81" stroke-width="1.3982" stroke-miterlimit="10" cx="11.252" cy="10.648" r="9.086"/>
+<path id="calque_x5F_1-1_55_" fill="#8A92A6" d="M15.637,10.089v1.118h-3.355v3.4h-1.23v-3.4H7.696v-1.118h3.355V6.689h1.23v3.399
+	H15.637z"/>
+</svg>
+							<ul class="menu-open pointer">
+								<li class="last-button-border menu-y-button pointer"><svg width="25px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve">
+<g id="calque_x5F_1-2_21_">
+	<path d="M18.699,24.318V0.681h5.117l-0.001,23.637H18.699z M19.699,1.681v21.637h3.117V1.681H19.699z"/>
+	<path d="M9.958,24.318V0.681h5.117v23.637H9.958z M10.958,1.681v21.637h3.117V1.681H10.958z"/>
+	<path d="M1.184,24.318V0.681h5.114v23.637H1.184z M2.184,1.681v21.637h3.114V1.681H2.184z"/>
+</g>
+</svg><span>Menu Y</span></li>
+							</ul>
+						</li>
+						<li class="list-button"><svg width="25px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve">
+<g id="calque_x5F_1-2_41_">
+	
+		<rect x="1.431" y="1.618" fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke-miterlimit="10" width="4.764" height="4.765"/>
+	
+		<line fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke-miterlimit="10" x1="8.437" y1="4.129" x2="23.569" y2="4.129"/>
+	
+		<rect x="1.431" y="10.118" fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke-miterlimit="10" width="4.764" height="4.765"/>
+	
+		<line fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke-miterlimit="10" x1="8.437" y1="12.629" x2="23.569" y2="12.629"/>
+	
+		<rect x="1.431" y="18.619" fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke-miterlimit="10" width="4.764" height="4.764"/>
+	
+		<line fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke-miterlimit="10" x1="8.437" y1="21.131" x2="23.569" y2="21.131"/>
+</g>
+</svg><span>List</span></li>
+						<li class="grid-button"><svg width="25px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve">
+<g id="calque_x5F_1-2_26_">
+	<rect x="1.156" y="1.901" width="1.432" height="1.432"/>
+	<rect x="5.246" y="1.901" width="1.431" height="1.432"/>
+	<rect x="9.335" y="1.901" width="1.431" height="1.432"/>
+	<rect x="13.424" y="1.901" width="1.432" height="1.432"/>
+	<rect x="17.514" y="1.901" width="1.431" height="1.432"/>
+	<rect x="21.603" y="1.901" width="1.432" height="1.432"/>
+	<rect x="1.156" y="5.991" width="1.432" height="1.431"/>
+	<rect x="5.246" y="5.991" width="1.431" height="1.431"/>
+	<rect x="9.335" y="5.991" width="1.431" height="1.431"/>
+	<rect x="13.424" y="5.991" width="1.432" height="1.431"/>
+	<rect x="17.514" y="5.991" width="1.431" height="1.431"/>
+	<rect x="21.603" y="5.991" width="1.432" height="1.431"/>
+	<rect x="1.156" y="10.08" width="1.432" height="1.432"/>
+	<rect x="5.246" y="10.08" width="1.431" height="1.432"/>
+	<rect x="9.335" y="10.08" width="1.431" height="1.432"/>
+	<rect x="13.424" y="10.08" width="1.432" height="1.432"/>
+	<rect x="17.514" y="10.08" width="1.431" height="1.432"/>
+	<rect x="21.603" y="10.08" width="1.432" height="1.432"/>
+	<rect x="1.156" y="14.17" width="1.432" height="1.431"/>
+	<rect x="5.246" y="14.17" width="1.431" height="1.431"/>
+	<rect x="9.335" y="14.17" width="1.431" height="1.431"/>
+	<rect x="13.424" y="14.17" width="1.432" height="1.431"/>
+	<rect x="17.514" y="14.17" width="1.431" height="1.431"/>
+	<rect x="21.603" y="14.17" width="1.432" height="1.431"/>
+	<rect x="1.156" y="18.259" width="1.432" height="1.431"/>
+	<rect x="5.246" y="18.259" width="1.431" height="1.431"/>
+	<rect x="9.335" y="18.259" width="1.431" height="1.431"/>
+	<rect x="13.424" y="18.259" width="1.432" height="1.431"/>
+	<rect x="17.514" y="18.259" width="1.431" height="1.431"/>
+	<rect x="21.603" y="18.259" width="1.432" height="1.431"/>
+	<rect x="1.156" y="22.348" width="1.432" height="1.432"/>
+	<rect x="5.246" y="22.348" width="1.431" height="1.432"/>
+	<rect x="9.335" y="22.348" width="1.431" height="1.432"/>
+	<rect x="13.424" y="22.348" width="1.432" height="1.432"/>
+	<rect x="17.514" y="22.348" width="1.431" height="1.432"/>
+	<rect x="21.603" y="22.348" width="1.432" height="1.432"/>
+</g>
+</svg>
+<span>Dotted Grid</span></li>
+						<li class="text-button"><svg width="25px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve">
+<g id="calque_x5F_1-2_44_">
+	
+		<line fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke-width="1.0859" stroke-miterlimit="10" x1="0.62" y1="1.433" x2="24.381" y2="1.433"/>
+	
+		<line fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke-width="1.0859" stroke-miterlimit="10" x1="0.62" y1="5.859" x2="24.381" y2="5.859"/>
+	
+		<line fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke-width="1.0859" stroke-miterlimit="10" x1="0.62" y1="10.288" x2="20.025" y2="10.288"/>
+	
+		<line fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke-width="1.0859" stroke-miterlimit="10" x1="0.62" y1="14.714" x2="24.381" y2="14.714"/>
+	
+		<line fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke-width="1.0859" stroke-miterlimit="10" x1="0.62" y1="19.141" x2="14.68" y2="19.141"/>
+	
+		<line fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke-width="1.0859" stroke-miterlimit="10" x1="0.62" y1="23.567" x2="24.381" y2="23.567"/>
+</g>
+</svg><span>Text</span></li>
+					</ul>
+				</div>
+			</div>
+			
+
+		</div>
+
+	<script type="text/javascript" src="jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="jquery-ui.min.js"></script>
+	<script type="text/javascript" src="sketch.min.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+
+	</body>
+
+</html>

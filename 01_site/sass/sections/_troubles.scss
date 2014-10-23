@@ -1,0 +1,180 @@
+
+section.troubles {
+	z-index: 2;
+	height: 850px;
+	padding-top: 250px;
+	width: 100%;
+	background: url(../img/troubles/pic-troubles.png);
+	background-position: bottom;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+
+
+
+}
+
+
+.troubles-txt {
+	width: 500px;
+	margin-left: 60px;
+}
+
+
+.troubles-txt h3 {
+	@include blank-h3;
+}
+
+.troubles-txt p {
+	margin-left: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
+------------------------------
+
+  
+  $media-queries 
+
+------------------------------
+*/
+
+
+
+
+@media (min-width: 1400px) {
+
+	section.troubles {
+		height: 1000px;
+	}
+
+
+
+
+
+}
+/* end min-width 1400px */
+
+
+
+
+
+
+@media (max-width: 950px) {
+
+	section.troubles {
+		padding-top: 100px;
+		height: 700px;
+	}
+
+
+
+
+
+}
+/* end max-width 950px */
+
+
+
+
+
+
+@media (max-width: 650px) {
+
+	.troubles-txt {
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	.troubles-txt p {
+		margin-left: 0;
+	}
+
+
+
+	.troubles-txt h3 {
+		font-size: 20px;
+		margin-bottom: 30px;
+	}
+
+
+
+
+}
+/* end max-width 650px */
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+
+
+	section.troubles {
+		height: 500px;
+	}
+
+
+}
+/* end max-width 600px */
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 500px) {
+
+
+	section.troubles {
+		height: 400px;
+	}
+
+
+}
+/* end max-width 500px */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

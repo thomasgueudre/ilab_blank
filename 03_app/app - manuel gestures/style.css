@@ -1,0 +1,566 @@
+/* line 3, stylesheet/_menu.scss */
+div#video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #FFF;
+  -webkit-animation: fadeout 1s ease-out 3s forwards;
+  -o-animation: fadeout 1s ease-out 3s forwards;
+  animation: fadeout 1s ease-out 3s forwards;
+}
+/* line 15, stylesheet/_menu.scss */
+div#video img#logo-anim-gif {
+  width: 100%;
+  -webkit-animation: fadeout 1s ease-out 3s forwards;
+  -o-animation: fadeout 1s ease-out 3s forwards;
+  animation: fadeout 1s ease-out 3s forwards;
+  position: absolute;
+  top: 50%;
+  margin-top: -30%;
+  left: 50%;
+  margin-left: -50%;
+}
+@media screen and (min-width: 640px) {
+  /* line 15, stylesheet/_menu.scss */
+  div#video img#logo-anim-gif {
+    display: none;
+  }
+}
+
+/* line 32, stylesheet/_menu.scss */
+div#video.off {
+  display: none;
+}
+
+@media screen and (max-width: 640px) {
+  /* line 36, stylesheet/_menu.scss */
+  ul#menu {
+    width: calc(100% - 40px);
+    margin: 0 auto;
+    padding: 0;
+  }
+  /* line 18, stylesheet/_mixin.scss */
+  ul#menu:before, ul#menu:after {
+    content: "";
+    display: table;
+  }
+  /* line 22, stylesheet/_mixin.scss */
+  ul#menu:after {
+    clear: both;
+  }
+  /* line 26, stylesheet/_mixin.scss */
+  ul#menu {
+    zoom: 1;
+  }
+  /* line 42, stylesheet/_menu.scss */
+  ul#menu li {
+    list-style: none;
+    width: calc(50% - 1px);
+    float: left;
+    border-bottom: 1px solid #ddd;
+  }
+  /* line 48, stylesheet/_menu.scss */
+  ul#menu li:nth-child(2n) {
+    margin-right: 0px;
+    border-left: 1px solid #ddd;
+  }
+  /* line 53, stylesheet/_menu.scss */
+  ul#menu li:nth-child(5), ul#menu li:nth-child(6) {
+    border-bottom: none;
+  }
+  /* line 56, stylesheet/_menu.scss */
+  ul#menu li a {
+    width: 100%;
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+    z-index: 999;
+  }
+  /* line 62, stylesheet/_menu.scss */
+  ul#menu li a:before {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin-left: 45px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  /* line 73, stylesheet/_menu.scss */
+  ul#menu li a p {
+    text-align: center;
+    font-family: "fira sans", gill sans, arial, sans;
+    font-weight: 100;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #ccc;
+  }
+  /* line 81, stylesheet/_menu.scss */
+  ul#menu li a p#tuto {
+    color: #454545;
+    font-weight: 300;
+  }
+}
+
+/* line 93, stylesheet/_menu.scss */
+ul#menu > li:first-child > a:before {
+  background: url(img/import-icon/import.png) no-repeat;
+  background-size: contain;
+}
+
+/* line 98, stylesheet/_menu.scss */
+‡
+ul#menu > li:nth-child(2) > a:before {
+  background: url(img/pins-icon/pins.png) no-repeat;
+  background-size: contain;
+}
+
+/* line 103, stylesheet/_menu.scss */
+ul#menu > li:nth-child(3) > a:before {
+  background: url(img/project-icon/project.png) no-repeat;
+  background-size: contain;
+}
+
+/* line 108, stylesheet/_menu.scss */
+ul#menu > li:nth-child(4) > a:before {
+  background: url(img/checks-icon/checks.png) no-repeat;
+  background-size: contain;
+}
+
+/* line 113, stylesheet/_menu.scss */
+ul#menu > li:nth-child(5) > a:before {
+  background: url(img/tutorial-icon/tutorial.png) no-repeat;
+  background-size: contain;
+}
+
+/* line 119, stylesheet/_menu.scss */
+ul#menu > li:last-child > a:before {
+  background: url(img/save-icon/save.png) no-repeat;
+  background-size: contain;
+}
+
+@-webkit-keyframes fadeout {
+  /* line 126, stylesheet/_menu.scss */
+  from {
+    opacity: 1;
+  }
+
+  /* line 129, stylesheet/_menu.scss */
+  to {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes fadeout {
+  /* line 136, stylesheet/_menu.scss */
+  from {
+    opacity: 1;
+  }
+
+  /* line 139, stylesheet/_menu.scss */
+  to {
+    opacity: 0;
+  }
+}
+
+@-ms-keyframes fadeout {
+  /* line 146, stylesheet/_menu.scss */
+  from {
+    opacity: 1;
+  }
+
+  /* line 149, stylesheet/_menu.scss */
+  to {
+    opacity: 0;
+  }
+}
+
+@-o-keyframes fadeout {
+  /* line 156, stylesheet/_menu.scss */
+  from {
+    opacity: 1;
+  }
+
+  /* line 159, stylesheet/_menu.scss */
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeout {
+  /* line 166, stylesheet/_menu.scss */
+  from {
+    opacity: 1;
+  }
+
+  /* line 169, stylesheet/_menu.scss */
+  to {
+    opacity: 0;
+  }
+}
+
+/* line 3, stylesheet/_guide.scss */
+#iframe {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  position: fixed;
+  top: 50px;
+  background: #fff;
+  z-index: 99999;
+  border: none;
+  border-top: 1px solid #ddd;
+  -webkit-animation: appear-frame .5s ease-out;
+}
+
+/* line 16, stylesheet/_guide.scss */
+#iframe.off {
+  display: none;
+}
+
+@-webkit-keyframes appear-frame {
+  /* line 21, stylesheet/_guide.scss */
+  from {
+    top: 100px;
+    opacity: 0;
+  }
+
+  /* line 25, stylesheet/_guide.scss */
+  to {
+    top: 50px;
+    opacity: 1;
+  }
+}
+
+/* line 32, stylesheet/_guide.scss */
+main {
+  width: 100%;
+  margin: 0 auto;
+}
+/* line 35, stylesheet/_guide.scss */
+main #wrapper {
+  width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+}
+@media screen and (max-width: 900px) {
+  /* line 35, stylesheet/_guide.scss */
+  main #wrapper {
+    width: calc(100% - 40px);
+  }
+}
+/* line 42, stylesheet/_guide.scss */
+main #wrapper ul#guide-list {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+/* line 18, stylesheet/_mixin.scss */
+main #wrapper ul#guide-list:before, main #wrapper ul#guide-list:after {
+  content: "";
+  display: table;
+}
+/* line 22, stylesheet/_mixin.scss */
+main #wrapper ul#guide-list:after {
+  clear: both;
+}
+/* line 26, stylesheet/_mixin.scss */
+main #wrapper ul#guide-list {
+  zoom: 1;
+}
+/* line 47, stylesheet/_guide.scss */
+main #wrapper ul#guide-list li {
+  height: 55px;
+  list-style: none;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #eee;
+  box-shadow: 1px 2px 1px #ddd;
+  width: calc(25% - 10px);
+  float: left;
+}
+@media screen and (max-width: 900px) {
+  /* line 47, stylesheet/_guide.scss */
+  main #wrapper ul#guide-list li {
+    width: calc(50% - 10px);
+  }
+}
+@media screen and (max-width: 640px) {
+  /* line 47, stylesheet/_guide.scss */
+  main #wrapper ul#guide-list li {
+    width: 100%;
+  }
+}
+/* line 62, stylesheet/_guide.scss */
+main #wrapper ul#guide-list li:nth-child(4n) {
+  margin-right: 0;
+}
+/* line 65, stylesheet/_guide.scss */
+main #wrapper ul#guide-list li a {
+  width: 100%;
+  display: inline-block;
+}
+/* line 68, stylesheet/_guide.scss */
+main #wrapper ul#guide-list li a:before {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 215px;
+  float: left;
+  margin-right: 30px;
+  margin-left: 20px;
+}
+@media screen and (max-width: 640px) {
+  /* line 78, stylesheet/_guide.scss */
+  main #wrapper ul#guide-list li a:before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin-right: 30px;
+  }
+}
+@media screen and (max-width: 900px) {
+  /* line 88, stylesheet/_guide.scss */
+  main #wrapper ul#guide-list li a:before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin-right: 30px;
+  }
+}
+/* line 97, stylesheet/_guide.scss */
+main #wrapper ul#guide-list li a p {
+  float: left;
+  display: inline-block;
+  text-align: center;
+  padding: 3px 0 3px 40px;
+  border-left: 1px solid #ddd;
+  font-family: "fira sans", gill sans, arial, sans;
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  line-height: 25px;
+  color: #676767;
+}
+@media screen and (min-width: 900px) {
+  /* line 97, stylesheet/_guide.scss */
+  main #wrapper ul#guide-list li a p {
+    width: 100%;
+  }
+}
+
+/* line 121, stylesheet/_guide.scss */
+ul#guide-list li:first-child a:before {
+  background: url(img/tutorial/menu-icon.png) no-repeat;
+  background-size: contain;
+}
+/* line 125, stylesheet/_guide.scss */
+ul#guide-list li:nth-child(2) a:before {
+  background: url(img/tutorial/draw.png) no-repeat;
+  background-size: contain;
+}
+/* line 129, stylesheet/_guide.scss */
+ul#guide-list li:nth-child(3) a:before {
+  background: url(img/tutorial/select.png) no-repeat;
+  background-size: contain;
+}
+/* line 133, stylesheet/_guide.scss */
+ul#guide-list li:nth-child(4) a:before {
+  background: url(img/tutorial/move.png) no-repeat;
+  background-size: contain;
+}
+/* line 137, stylesheet/_guide.scss */
+ul#guide-list li:nth-child(5) a:before {
+  background: url(img/tutorial/duplicate.png) no-repeat;
+  background-size: contain;
+}
+/* line 141, stylesheet/_guide.scss */
+ul#guide-list li:nth-child(6) a:before {
+  background: url(img/tutorial/zoom.png) no-repeat;
+  background-size: contain;
+}
+/* line 145, stylesheet/_guide.scss */
+ul#guide-list li:nth-child(7) a:before {
+  background: url(img/tutorial/chproject.png) no-repeat;
+  background-size: contain;
+}
+/* line 149, stylesheet/_guide.scss */
+ul#guide-list li:nth-child(8) a:before {
+  background: url(img/tutorial/note.png) no-repeat;
+  background-size: contain;
+}
+/* line 153, stylesheet/_guide.scss */
+ul#guide-list li:nth-child(9) a:before {
+  background: url(img/tutorial/scroll.png) no-repeat;
+  background-size: contain;
+}
+/* line 157, stylesheet/_guide.scss */
+ul#guide-list li:nth-child(10) a:before {
+  background: url(img/tutorial/split.png) no-repeat;
+  background-size: contain;
+}
+
+/* line 163, stylesheet/_guide.scss */
+#menu-wrapper {
+  width: 320px;
+  position: absolute;
+  top: 0px;
+  left: -100%;
+  -webkit-transition: .3s ease-out;
+  -o-transition: .3s ease-out;
+  transition: .3s ease-out;
+  background: #FFF;
+  padding: 0px 0 0px 0;
+}
+/* line 174, stylesheet/_guide.scss */
+#menu-wrapper .nav-banner {
+  width: 300px;
+  height: 30px;
+  padding: 10px;
+  margin: 0 auto;
+  border-bottom: 1px solid #eee;
+}
+/* line 180, stylesheet/_guide.scss */
+#menu-wrapper .nav-banner img {
+  display: block;
+  height: 30px;
+  margin: 0 auto;
+  text-align: center;
+}
+/* line 187, stylesheet/_guide.scss */
+#menu-wrapper .nav-banner #close-nav-button {
+  position: absolute;
+  left: 40px;
+  top: 5px;
+  font-family: "fira sans", gill sans, arial, sans;
+  font-weight: 300;
+  font-size: 12px;
+  text-transform: uppercase;
+  background: none;
+  background: #fff;
+  z-index: 999;
+}
+/* line 201, stylesheet/_guide.scss */
+#menu-wrapper ul#menu {
+  padding: 0px 20px 20px 20px;
+  -webkit-transition: .3s ease-out;
+  -o-transition: .3s ease-out;
+  transition: .3s ease-out;
+  background: #FFF;
+}
+
+/* line 1, stylesheet/_activation.scss */
+.black {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.8;
+  z-index: 10;
+  border-left: 3px solid;
+  display: none;
+}
+
+/* line 13, stylesheet/_activation.scss */
+.on {
+  display: block;
+}
+
+/* line 16, stylesheet/_activation.scss */
+.off {
+  display: none;
+}
+
+/* line 20, stylesheet/_activation.scss */
+.active {
+  -webkit-transform: translateX(93%);
+  -ms-transform: translateX(93%);
+  -o-transform: translateX(93%);
+  transform: translateX(93%);
+  -webkit-transition: .3s ease-out;
+  -o-transition: .3s ease-out;
+  transition: .3s ease-out;
+}
+
+/* line 6, stylesheet/style.scss */
+html, body {
+  margin: 0;
+  padding: 0;
+  -webkit-transition: .3s ease-out;
+  -o-transition: .3s ease-out;
+}
+
+/* line 13, stylesheet/style.scss */
+.container {
+  width: 100%;
+}
+
+/* line 17, stylesheet/style.scss */
+header {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px 0 10px 0;
+  border-bottom: 1px solid #eee;
+}
+/* line 23, stylesheet/style.scss */
+header h1 {
+  text-align: center;
+  margin: 0 auto;
+  width: 200px;
+  font-family: "fira sans", gill sans, arial, sans;
+  font-weight: 300;
+  font-size: 16px;
+  display: none;
+}
+/* line 32, stylesheet/style.scss */
+header img {
+  height: 30px;
+  display: block;
+  margin: 0 auto;
+}
+/* line 37, stylesheet/style.scss */
+header #menu-button {
+  z-index: 990;
+  position: absolute;
+  left: 20px;
+  top: 15px;
+  font-family: "fira sans", gill sans, arial, sans;
+  font-weight: 300;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background: none;
+  border: none;
+}
+/* line 50, stylesheet/style.scss */
+header #close-iframe-button {
+  position: fixed;
+  left: 10px;
+  top: 5px;
+  font-family: "fira sans", gill sans, arial, sans;
+  font-weight: 300;
+  font-size: 12px;
+  text-transform: uppercase;
+  background: none;
+  border: 1px solid #eee;
+  background: #fff;
+  padding: 10px;
+  z-index: 999;
+}
+/* line 64, stylesheet/style.scss */
+header #close-iframe-button.off {
+  display: none;
+}

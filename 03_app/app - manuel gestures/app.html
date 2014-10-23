@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title></title>
+  <meta charset="UTF-8">
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+
+  <!--AFFICHAGE MOBILE-->
+
+  <!--
+  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="initial-scale=1.0">
+-->
+  <meta name="description" content="">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1" />
+  <meta http-equiv="cleartype" content="on">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="">
+
+  <!--  stylesheet-->
+
+  <link rel="stylesheet" href="bower_components/normalize.css/normalize.css">
+  <link rel="stylesheet" href="style.css">
+
+  <!--  javascript-->
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+  <div class="container">
+    <header>
+      <h1>_blank</h1>
+      <a href="index.html">
+        <img src="img/logo-min.png" alt="_blank logo">
+      </a>
+      <button id="close-iframe-button" class="off">close</button>
+      <button id="menu-button">menu</button>
+    </header>
+
+    <iframe id="iframe" class="off" src="" name="foo"></iframe>
+
+
+    <main>
+
+      <div id="img"></div>
+
+      <!-- OFF-CANVAS NAV  -->
+      <div id="menu-wrapper">
+        <div class="nav-banner">
+          <img src="img/logo-min.png" alt="_blank logo">
+          <span id="close-nav-button"><p>close</p></span>
+        </div>
+        <ul id="menu">
+          <li>
+            <a href="index.html">
+              <p>_Import</p>
+            </a>
+          </li>
+          <li>
+            <a href="www.google.be">
+              <p>_Pins</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <p>_Project</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <p>_Lists</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <p>_Tutorial</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <p>_Save</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="black off"></div>
+      <!-- END OFF-CANVAS NAV -->
+
+
+      <!-- WRAPPER -->
+      <div id="wrapper">
+        <ul id="guide-list">
+          <li>
+            <a href="gestures/menu.html" target="foo">
+              <p>Menu</p>
+            </a>
+          </li>
+          <li>
+
+            <a href="gestures/draw.html" target="foo">
+              <p>Draw</p>
+            </a>
+          </li>
+          <li>
+            <a href="gestures/select.html" target="foo">
+              <p>Select</p>
+            </a>
+          </li>
+          <li>
+            <a href="gestures/move.html" target="foo">
+              <p>Move</p>
+            </a>
+          </li>
+          <li>
+            <a href="gestures/duplicate.html" target="foo">
+              <p>Duplicate</p>
+            </a>
+          </li>
+          <li>
+            <a href="gestures/zoom.html" target="foo">
+              <p>Zoom</p>
+            </a>
+          </li>
+          <li>
+            <a href="gestures/chproject.html" target="foo">
+              <p>Change project</p>
+            </a>
+          </li>
+          <li>
+            <a href="gestures/note.html" target="foo">
+              <p>Note</p>
+            </a>
+          </li>
+          <li>
+            <a href="gestures/scroll.html" target="foo">
+              <p>Scroll</p>
+            </a>
+          </li>
+          <li>
+            <a href="gestures/split.html" target="foo">
+              <p>Devide screen</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- END WRAPPER -->
+
+    </main>
+
+    <footer>
+    </footer>
+
+  </div>
+
+  <script>
+    // NAV OPEN
+    $('#menu-button').click(function () {
+      $('html').toggleClass('active');
+      $('.black').addClass('on');
+      $('.black').removeClass('off');
+    });
+
+    $('#guide-list li').click(function () {
+      $('#iframe').removeClass('off');
+      $('#close-iframe-button').removeClass('off');
+    });
+
+
+     // IFRAME
+    $('#guide-list li').click(function () {
+      $('#iframe').removeClass('off');
+    });
+    $('#close-iframe-button').click(function () {
+      $('#iframe').addClass('off');
+      $('#close-iframe-button').addClass('off');
+    });
+
+     // NAV CLOSE
+    $('#close-nav-button').click(function () {
+      $('html').toggleClass('active');
+      $('.black').removeClass('on');
+      $('.black').addClass('off');
+    });
+
+
+
+     //
+     //    $('#close-button').click(function () {
+     //      $('html').toggleClass('active');
+     //      $('.black').removeClass('on');
+     //      $('.black').addClass('off');
+     //    });
+     //    
+
+
+
+     // IFRAME
+
+     //    $('#guide-list li').click(function () {
+     //      $("#iframe").addClass("iframe-active");
+     //      $("#iframe").removeClass("iframe-inactive");
+     //      $('#iframe').attr('src', 'gestures/menu.html');
+     //    });
+  </script>
+
+</body>
+
+</html>

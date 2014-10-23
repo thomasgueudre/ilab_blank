@@ -1,0 +1,70 @@
+@import "_mixin.scss";
+
+html {
+  background: #fff;
+}
+
+.container {
+  header {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 0 10px 0;
+    border-bottom: 1px solid #eee;
+    button {
+      z-index: 99;
+      position: absolute;
+      left: 20px;
+      top: 25px;
+      font-family: $font;
+      font-weight: $light;
+      font-size: $text;
+      letter-spacing: $ls-text;
+      background: none;
+      border: none;
+    }
+    img {
+      width: 50px;
+      height: 50px;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  main {
+    h1 {
+      font-family: $font;
+      font-size: $text;
+      letter-spacing: $ls-text;
+      font-weight: $light;
+      text-transform: uppercase;
+      text-align: center;
+      margin-top: 30px;
+    }
+    hr {
+      width: 30px;
+    }
+    h2 {
+      font-family: $font;
+      font-size: $title;
+      letter-spacing: $ls-text;
+      font-weight: $light;
+      text-transform: uppercase;
+      text-align: center;
+    }
+    p {
+      font-family: $font;
+      font-size: $text;
+      letter-spacing: $ls-text;
+      font-weight: $light;
+      padding: 10px 20px 10px 20px;
+    }
+    img {
+      width: 300px;
+      margin: 0 auto;
+    }
+  }
+}
+
+#iframe.off {
+  display: none;
+}

@@ -1,0 +1,370 @@
+@-webkit-keyframes animstylet {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+
+
+
+
+
+/* STYLET PAGE */
+
+.stylet-txt{
+  width: 500px;
+  margin-left: 60px;
+  margin-top: -50px;
+  margin-bottom: 60px;
+}
+
+.stylet-txt h3 {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 45px;
+  letter-spacing: 2px;
+}
+
+.stylet-txt p {
+  margin-left: 60px;
+}
+
+.stylet-wireframe{
+  background: #979BA5;
+  width: 100%;
+  -webkit-transform-style: preserve-3d;
+}
+
+.svg-container{
+  width: 50px;
+  margin: 0 auto;
+  position: relative;
+  color: #fff;
+}
+
+.stylet-wireframe .svg-container svg{
+  display: block;
+  margin: 0 auto;
+  padding: 70px 0px;
+}
+
+#stylet-svg path {
+  stroke-dasharray: 590;
+  stroke-dashoffset: 590;
+}
+
+#stylet-svg line {
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+}
+
+#stylet-svg ellipse {
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+}
+
+.svg-container .p-svg-right{
+  position: absolute;
+  left: 160px;
+  white-space: nowrap;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0);
+}
+
+.svg-container .p-svg-right.text-stylet-opacity{
+  color: rgba(255, 255, 255, 1);
+}
+
+.svg-container .p-svg-right.right-one{
+  top: 90px;
+  transition: all .3s ease-out .5s;
+}
+
+.svg-container .p-svg-right.right-two{
+  top: 200px;
+  transition: all .3s ease-out .7s;
+}
+
+.svg-container .p-svg-right.right-three{
+  top: 380px;
+  transition: all .3s ease-out .9s;
+}
+
+.svg-container .p-svg-right.right-four{
+  top: 630px;
+  transition: all .3s ease-out 1.1s;
+}
+
+.svg-container .p-svg-right.right-one:after{
+  transition: all .5s ease-out ;
+}
+
+.svg-container .p-svg-right.right-two:after{
+  transition: all .5s ease-out .2s;
+}
+
+.svg-container .p-svg-right.right-three:after{
+  transition: all .5s ease-out .4s;
+}
+
+.svg-container .p-svg-right.right-four:after{
+  transition: all .5s ease-out .6s;
+}
+
+.svg-container .p-svg-right:after{
+  position: absolute;
+  content: '';
+  width: 0px;
+  height: 1px;
+  background: #fff;
+  left: -90px;
+  top: 10px;
+}
+
+.svg-container .p-svg-right.after-line-stylet:after{
+  width: 80px;
+}
+
+.svg-container .p-svg-left{
+  position: absolute;
+  right: 160px;
+  white-space: nowrap;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0);
+}
+
+.svg-container .p-svg-left.text-stylet-opacity{
+  color: rgba(255, 255, 255, 1);
+}
+
+.svg-container .p-svg-left.left-one{
+  top: 215px;
+  transition: all .3s ease-out .5s;
+}
+
+.svg-container .p-svg-left.left-two{
+  top: 510px;
+  transition: all .3s ease-out .7s;
+}
+
+.svg-container .p-svg-left.left-three{
+  top: 630px;
+  transition: all .3s ease-out .9s;
+}
+
+.svg-container .p-svg-left:after{
+  position: absolute;
+  content: '';
+  width: 0px;
+  height: 1px;
+  background: #fff;
+  right: -90px;
+  top: 10px;
+}
+
+.svg-container .p-svg-left.left-one:after{
+  transition: all .5s ease-out ;
+}
+
+.svg-container .p-svg-left.left-two:after{
+  transition: all .5s ease-out .2s;
+}
+
+.svg-container .p-svg-left.left-three:after{
+  transition: all .5s ease-out .4s;
+}
+
+.svg-container .p-svg-left.after-line-stylet:after{
+  width: 80px;
+}
+
+/* MENU NIGHT */
+
+.workspace-menu{
+  padding-top: 100px;
+  background: rgba(40,40,40,.92);
+  transition: all .4s ease-in;
+}
+
+.bg-opacity{
+  background: rgba(40,40,40,0.08);
+}
+
+.workspace-menu-txt{
+  width: 500px;
+  margin-left: 60px;
+  /*margin-top: 100px;*/
+  margin-bottom: 60px;
+}
+
+.workspace-menu-txt-two{
+  width: 500px;
+  margin-left: 60px;
+  margin-top: 80px;
+  margin-bottom: 60px;
+  opacity: 0;
+  transition: all .9s ease-out ;
+}
+
+.workspace-menu-txt h3, .workspace-menu-txt-two h3 {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 45px;
+  letter-spacing: 2px;
+}
+
+.workspace-menu-txt p, .workspace-menu-txt-two p {
+  margin-left: 60px;
+}
+
+.workspace-menu svg{
+  display: block;
+  margin: 0 auto;
+  padding: 70px 0px 100px;
+}
+
+.workspace-menu .nite-menu{
+  opacity: 0;
+  transition: all .4s ease-out .2s;
+}
+
+.workspace-menu .day-menu{
+  transition: all .4s ease-out .2s;
+}
+
+
+/* sharing page */
+
+.sharing{
+  width: 100%;
+  height: 1000px;
+padding-top: 70px;
+position: relative;
+background: url(../img/sharing/sharing-pic.png);
+background-repeat: no-repeat;
+background-position: top center;
+background-size: 100% auto;
+}
+
+.sharing-txt{
+  width: 600px;
+margin-left: 60px;
+margin-bottom: 120px;
+position: absolute;
+right: 100px;
+}
+
+.sharing-txt h3 {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 45px;
+  letter-spacing: 2px;
+}
+
+.sharing-txt p {
+margin-left: 60px;
+}
+
+/* video page */
+
+.video-pres{
+  width: 100%;
+  height: 650px;
+  background: rgba(40,40,40,0.92);
+}
+
+/* try-out page */
+
+.try-out{
+  width: 100%;
+  height: 800px;
+padding-top: 50px;
+position: relative;
+background: url(../img/try-out/grid-bg.jpg);
+background-repeat: no-repeat;
+background-position: bottom center;
+background-size: 100% auto;
+overflow: hidden;
+}
+
+.try-out-txt{
+  width: 600px;
+margin-left: 60px;
+margin-bottom: 120px;
+position: absolute;
+left: 100px;
+}
+
+.try-out-txt h3 {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 45px;
+  letter-spacing: 2px;
+  margin-top: 60px;
+}
+
+.try-out-txt p {
+margin-left: 60px;
+}
+
+a.link-try{
+  display: block;
+text-align: center;
+border: 1px solid #8991A6;
+width: 250px;
+padding: 15px 0;
+margin: 500px auto 0;
+text-decoration: none;
+color: #8991A6;
+font-weight: 300;
+text-transform: uppercase;
+right: 40px;
+z-index: 1;
+-webkit-transition: all 0.3s ease-out;
+-moz-transition: all 0.3s ease-out;
+-o-transition: all 0.3s ease-out;
+-moz-transition: all 0.3s ease-out;
+-khtml-transition: all 0.3s ease-out;
+transition: all 0.3s ease-out;
+}
+
+a.link-try:hover {
+background: #8991A6;
+color: #fff;
+}
+
+.footer-name{
+  width: 100%;
+  height: 80px;
+  background: #fff;
+  position: absolute;
+  bottom: 0;
+}
+
+.footer-name p{
+  text-align: center;
+  font-size: 15px;
+  line-height: 70px;
+  text-transform: uppercase;
+}
+
+.footer-name p a{
+  text-decoration: none;
+  color: #8991A6;
+  transition: all .3s ease-in-out;
+}
+
+.footer-name p a:hover{
+  color: #363738;
+}
+
+
+
+/*
+  pages
+*/

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title></title>
+  <meta charset="UTF-8">
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+
+  <!--AFFICHAGE MOBILE-->
+
+  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="initial-scale=1.0">
+
+  <!--  stylesheet-->
+
+  <link rel="stylesheet" href="../bower_components/normalize.css/normalize.css">
+  <link rel="stylesheet" href="../gestures.css">
+
+  <!--  javascript-->
+  <script src="../bower_components/jquery/dist/jquery.js"></script>
+  <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+  <div class="container">
+    <main>
+     
+      <h1>Gestures</h1>
+      <hr/>
+      <h2>Move</h2>
+      <p>To move something, you need to use three fingers and slide it where you want to place it.</p>
+
+      <img src="../img/gestures/move-gesture.gif" alt="gif animé du geste prédéfini pour l'ouverture du menu">
+    </main>
+
+    <footer>
+    </footer>
+
+  </div>
+
+  <script>
+    $('#close-button').click(function () {
+      $('#iframe').addClass('off');
+      console.log('hello');
+    });
+  </script>
+
+</body>
+
+</html>

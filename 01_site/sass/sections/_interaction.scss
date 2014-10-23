@@ -1,0 +1,270 @@
+
+
+section.interaction {
+	width: 100%;
+	height: 1000px;
+	padding-top: 00px;
+	position: relative;
+	background: url(../img/interaction/banner_app.png);
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	background-size: 100% auto;
+}
+
+
+
+
+.interaction-txt {
+	width: 600px;
+	margin-left: 60px;
+	margin-bottom: 120px;
+	position: absolute;
+	right: 100px;
+}
+
+.interaction-txt h3 {
+	@include blank-h3;
+
+}
+
+.interaction-txt p {
+	margin-left: 60px;
+}
+
+
+
+
+a.interaction-dl {
+	display: block;
+	text-align: center;
+	border: 1px solid $blue-medium;
+
+	width: 250px;
+	padding: 15px 0;
+	position: absolute;
+	text-decoration: none;
+	color: $blue-medium;
+	font-weight: 300;
+	text-indent: -20px;
+	bottom: -80px;
+	right: 40px;
+	z-index: 1;
+
+
+	@include transition-base;
+}
+
+a.interaction-dl:after {
+	content: "";
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	background: url(../img/interaction/download_app_150.png);
+	background-position: right top;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	top: -0px;
+	z-index: 2;
+}
+
+
+
+a.interaction-dl:hover {
+	background: $blue-medium;
+	color: $white;
+}
+
+
+a.interaction-dl:hover:after {
+	background: url(../img/interaction/download_app_150_white.png);
+
+
+}
+
+a.interaction-dl:hover {
+  background: #8991A6;
+  color: #fff;
+}
+
+a.interaction-dl:hover:after {
+  background: url(../img/interaction/download_app_150_white.png);
+  background-size: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+------------------------------
+
+  
+  $media-queries 
+
+------------------------------
+*/
+
+
+
+
+
+@media (max-width: 950px) {
+
+	section.interaction {
+		height: 800px;
+	}
+
+
+}
+/* end max-width 950px */
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 650px) {
+
+
+	.interaction-txt {
+		width: 80%;
+		margin: 0 auto;
+		position: relative;
+		right: auto;
+	}
+
+	.interaction-txt p {
+		margin-left: 0;
+	}
+
+
+
+	.interaction-txt h3 {
+		font-size: 20px;
+		margin-bottom: 30px;
+	}
+
+	a.interaction-dl {
+		position: relative;
+		right: auto;
+		margin: 0 auto;
+	}
+
+
+	section.interaction {
+		height: 700px;
+	}
+
+
+
+
+
+
+}
+/* end max-width 650px */
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 550px) {
+
+	section.interaction {
+		height: 600px;
+	}
+
+
+}
+/* end max-width 550px */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

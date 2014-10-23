@@ -1,0 +1,170 @@
+
+
+
+section.magic {
+	z-index: -1;
+	position: relative;
+	top: -150px;
+}
+
+
+p.imagine-pic {
+	width: 100%;
+	height: 640px;
+	background: url(../img/magic/imagines.png);
+	text-indent: -9999px;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	opacity: 0;
+	transition: all .4s linear;
+}
+
+.waypoint-break{
+	width: 100%;
+	height: 1px;
+}
+
+.magic h3 {
+	@include blank-h3;
+}
+
+
+.magic-txt {
+	width: 600px;
+	margin-left: 60px;
+}
+
+
+.magic-txt p {
+	margin-left: 60px;
+}
+
+
+img.screenpic {
+	display: block;
+	width: 100%;
+	margin-top: 80px;
+	margin-bottom: 80px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+------------------------------
+
+  
+  $media-queries 
+
+------------------------------
+*/
+
+
+
+
+
+
+@media (max-width: 950px) {
+
+	p.imagine-pic {
+		height: 500px;
+	}
+
+
+}
+/* end max-width 950px */
+
+
+
+
+
+
+@media (max-width: 850px) {
+
+	p.imagine-pic {
+		height: 400px;
+	}
+
+
+}
+/* end max-width 850px */
+
+
+
+
+
+@media (max-width: 650px) {
+
+	p.imagine-pic {
+		height: 300px;
+	}
+
+
+}
+/* end max-width 650px */
+
+
+
+
+
+
+
+@media (max-width: 650px) {
+
+	.magic-txt {
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	.magic-txt p {
+		margin-left: 0;
+	}
+
+
+
+	.magic-txt h3 {
+		font-size: 20px;
+		margin-bottom: 30px;
+	}
+
+
+	img.screenpic {
+		margin-bottom: 0;
+	}
+
+
+}
+/* end max-width 650px */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
